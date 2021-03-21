@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
+
+button {
+    background-color: #132B40;
+    border: none;
+    border-radius: 5px;
+    color: #528bbd;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 12px;    
+    text-align: center;
+    text-decoration: none;    
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #0e1f2e;
+}
+
+html {
+    background-color: #205A8C;
+    color: #0d1f2e;
+    font-family: 'Roboto Slab', serif;
+}
+
+.description {
+    background-color: #132B40;
+    border-radius: 5px;
+    color: #528bbd;
+    margin: auto;
+    padding: 12px;
+    text-align: center;
+    width: 70%;
+}
+
+.description-cell {
+    /* row start / col start / row end / col end */
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 50px;
+    margin: auto;
+    padding-top: 2em;    
+    width: 70%;
+}
+
+.profile-image {
+    border-radius: 5px;
+}
+
+.profile-image-cell {
+    grid-area: 1 / 2 / 4 / 3;
+}
+
+.social-media-links {
+    grid-area: 3 / 1 / 4 / 2;
+    text-align: center;
+}
+
+.title {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+@media only screen and (max-width: 1024px) {
+    .grid-container {
+        display: grid;
+        grid-gap: 10px;
+    }
+
+    .title {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .profile-image-cell {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .description-cell {
+        grid-area: 4 / 1 / 5 / 2;
+    }
+
+    .social-media-links {
+        grid-area: 5 / 1 / 6 / 2;
+    }
+}
