@@ -10,11 +10,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
 
-        button {
+        a {
             background-color: #132B40;
             border: none;
             border-radius: 5px;
-            color: #528bbd;
+            color: #9aabbb;
             display: inline-block;
             font-size: 16px;
             margin: 4px 2px;
@@ -24,7 +24,7 @@
             transition-duration: 0.4s;
         }
 
-        button:hover {
+        a:hover {
             background-color: #0e1f2e;
         }
 
@@ -49,11 +49,11 @@
         .description {
             background-color: #132B40;
             border-radius: 5px;
-            color: #528bbd;
+            color: #9aabbb;
             margin: auto;
             padding: 12px;
             text-align: center;
-            width: 50%;
+            width: 80%;
         }
 
         .description-cell {
@@ -67,6 +67,10 @@
             margin: auto;
             padding-top: 2em;
             width: 70%;
+        }
+
+        .icon {
+            filter: invert(100%) opacity(60%);
         }
 
         .profile-image {
@@ -127,10 +131,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js">
-    </script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js">
-    </script>
 </head>
 
 <body>
@@ -145,32 +145,26 @@
             <img class="profile-image" src="img/fauxerious_web.webp" width="100%" />
         </div>
         <div class="description-cell">
-            <div class="description">{ 28 |
-                <ion-icon name="male-outline">
-                </ion-icon> | FL, USA | Queer | Single }
+            <div class="description">{ 28 | <img src="./img/male.svg" width="16px" height="16px" class="icon"> | FL, USA
+                | Queer | Blissfully Single }
             </div>
         </div>
         <div class="social-media-links">
-            <button onclick="window.location.href='https://www.furaffinity.net/user/fauxerious/';">
-                <ion-icon name="paw">
-                </ion-icon> FurAffinity
-            </button>
-            <button onclick="window.location.href='https://twitter.com/fauxerious';">
-                <ion-icon name="logo-twitter">
-                </ion-icon> Twitter
-            </button>
-            <button onclick="window.location.href='https://meow.social/@fauxerious';">
-                <ion-icon name="logo-mastodon">
-                </ion-icon> Mastodon
-            </button>
-            <button onclick="window.location.href='https://t.me/fauxerious';">
-                <ion-icon name="chatbox">
-                </ion-icon> Telegram
-            </button>
-            <button onclick="window.location.href='https://github.com/fauxerious';">
-                <ion-icon name="logo-github">
-                </ion-icon> GitHub
-            </button>
+            <a href='https://www.furaffinity.net/user/fauxerious/'>
+                <img src="./img/furaffinity.svg" width="16px" height="16px" class="icon"> FurAffinity
+            </a>
+            <a href='https://twitter.com/fauxerious'>
+                <img src="./img/twitter.svg" width="16px" height="16px" class="icon"> Twitter
+            </a>
+            <a href='https://meow.social/@fauxerious' rel='me'>
+                <img src="./img/mastodon.svg" width="16px" height="16px" class="icon"> Mastodon
+            </a>
+            <a href='https://t.me/fauxerious'>
+                <img src="./img/telegram.svg" width="16px" height="16px" class="icon"> Telegram
+            </a>
+            <a href='https://github.com/fauxerious'>
+                <img src="./img/github.svg" width="16px" height="16px" class="icon"> GitHub
+            </a>
         </div>
     </div>
 </body>
