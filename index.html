@@ -131,6 +131,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    
+    <script>
+       var pressedButton = document.getElementsById("discord")[0];
+       pressedButton.addEventListener("click", function (event) {
+           let me = "fauxerious#1892";
+           
+           navigator.clipboard.writeText(me);
+          alert(me + "copied to clipboard!");
+       })
+    </script>
 </head>
 
 <body>
@@ -149,11 +159,17 @@
             </div>
         </div>
         <div class="social-media-links">
+            <a href='https://twitter.com/fauxerious'>
+                <img src="./img/twitter.svg" width="16px" height="16px" class="icon"> Twitter
+            </a>
+            <a href='https://t.me/fauxerious'>
+                <img src="./img/telegram.svg" width="16px" height="16px" class="icon"> Telegram
+            </a>
             <a href='https://www.furaffinity.net/user/fauxerious/'>
                 <img src="./img/furaffinity.svg" width="16px" height="16px" class="icon"> FurAffinity
             </a>
-            <a href='https://twitter.com/fauxerious'>
-                <img src="./img/twitter.svg" width="16px" height="16px" class="icon"> Twitter
+            <a href='#' id="discord">
+                <img src="./img/discord.svg" width="16px" height="16px" class="icon"> Discord
             </a>
         </div>
     </div>
