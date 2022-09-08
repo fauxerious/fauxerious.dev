@@ -173,6 +173,16 @@
             </a>
         </div>
     </div>
+    
+    <script>
+       var discordButton = document.getElementById("discord");
+       discordButton.addEventListener("click", function (event) {
+           let me = "fauxerious#1892";
+           
+           navigator.clipboard.writeText(me);
+           alert(me + "copied to clipboard!");
+       })
+    </script>
 </body>
 
 </html>
