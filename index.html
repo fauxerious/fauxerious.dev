@@ -133,12 +133,12 @@
     <link rel="manifest" href="/site.webmanifest">
     
     <script>
-       var pressedButton = document.getElementsById("discord")[0];
-       pressedButton.addEventListener("click", function (event) {
+       var discordButton = document.getElementById("discord");
+       discordButton.addEventListener("click", function (event) {
            let me = "fauxerious#1892";
            
            navigator.clipboard.writeText(me);
-          alert(me + "copied to clipboard!");
+           alert(me + "copied to clipboard!");
        })
     </script>
 </head>
